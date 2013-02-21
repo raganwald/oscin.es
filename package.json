@@ -6,7 +6,7 @@
   "homepage": "http://oscin.es",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oscin-es/oscin-es.github.com.git"
+    "url": "git://github.com/raganwald/oscin.es.git"
   },
   "main": "lib/oscin.es.js",
   "scripts": {

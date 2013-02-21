@@ -49,7 +49,7 @@ This portion says that the B Combinator (or "Bluebird") performs composition. CL
 [oscin.es]: http://oscin.es
 [allong.es]: http://allong.es
 [npm]: hpmjs.org
-[bird.by.bird.spec.coffee]: https://github.com/oscin-es/oscin-es.github.com/blob/master/spec/bird.by.bird.spec.coffee
+[bird.by.bird.spec.coffee]: https://github.com/raganwald/oscin.es/blob/master/spec/bird.by.bird.spec.coffee
 [mock]: http://www.amazon.com/gp/product/0192801422?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0192801422
 
 It also says that the C Combinator ("Cardinal") is equivalent to `x(z)(y)` reversing two arguments, the D Combinator is a one-removed Bluebird, and so forth. This is the standard notation folks use (well, many would use a "." instead of "=", but that's another story.) Many standard derivations are shown and simultaneously tested as well, like:

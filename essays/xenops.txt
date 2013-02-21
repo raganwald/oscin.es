@@ -1,0 +1,4 @@
+    (let iota ()
+      (if (eq? #\* (read-char)) ((iota)(iota))
+          (lambda (c) ((c (lambda (x) (lambda (y) (lambda (z) ((x z)(y z))))))
+                       (lambda (x) (lambda (y) x))))))

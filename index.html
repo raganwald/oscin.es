@@ -1,1 +1,77 @@
-<html><body>Hello, oscin.es</body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+
+    <title>oscin.es</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Os´ci`nes</h1>
+        <h2><b>n. pl. 1.</b> (<i>Zool.</i>) Singing birds; a group of the Passeres, having numerous syringeal muscles, conferring musical ability.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/oscin-es/oscin-es.github.com" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p><a href="https://github.com/oscin-es/oscin-es.github.com">oscin.es</a> is a JavaScript library based on the standard combinators.</p>
+
+<h3>The Code</h3>
+
+<p>There are two kinds of functions in the library. Functions with the capitalized nickname of a bird are fixed arity forms of the combinators, e.g. <span class="code">function Kestrel (x, y)</span>, <span class="code">function Starling (x, y, z)</span>. Functions with a capitalized abbreviated name are curried forms that match the semantics of combinatory logic, e.g. <span class="code">C</span> is the curried form of <span class="code">Cardinal</span>, <span class="code">T</span> is the curried form of <span class="code">Thrush</span>.</p>
+
+<h3>Normal-Order Reduction</h3>
+
+<p>The library includes a function that applies <a href="https://en.wikipedia.org/wiki/Beta_normal_form">normal-order reduction</a> to expressions composed of proper combinators and unknowns. You can type things like <span class="code">reduce('Dxyzw')</span> or <span class="code">reduce('BBxyzw')</span> and get the response <span class="code">'xy(zw)'</span> to both, thus demonstrating that <span class="code">D = BB</span>. (Or in keeping with the <a href="https://en.wikipedia.org/wiki/Songbird" title="Songbird">passeri</a> metaphor, "If you call out the name of the bluebird to itself, it responds with the name of the dove.")</p>
+
+<iframe style="float:right;margin-left:20px;margin-bottom:20px;margin-top:20px" width="160" height="400" src="https://leanpub.com/javascript-allonge/embed" frameborder="0" allowtransparency="true"></iframe>
+
+<h3>Getting Started</h3>
+
+<p>npm install oscin.es</p>
+
+<p>Then read <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/readme.md">readme.md</a>.</p>
+
+<h3>Songbirds</h3>
+
+<p><a href="http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0192801422">To Mock a Mockingbird</a> established the metaphor of songbirds for the combinators, and ever since then logicians have called the K combinator a "kestrel," the B combinator a "bluebird," and so forth. The library's specs contain a <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/spec/bird.by.bird.spec.coffee">comprehensive listing of birds</a>.</p>
+
+  <p>In Raymond Smullyan's book, when you call out the song of a bird, each songbird responds with a song denoting a songbird. For example, the Identity bird sings back the name of the bird you sang to it. From the presence of a few simple birds in a forest, you can deduce all of programming.</p>
+
+<h3>Project Status</h3>
+
+<p>The standard birds are included and fully tested. The combinator definitions are <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/spec/bird.by.bird.spec.coffee">fully listed</a>, and <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/readme.md">readme.md</a> describes how to install and use oscin.es with npm and node.</p>
+
+<p>You can browse the <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/lib">source code</a> and <a href="https://github.com/oscin-es/oscin-es.github.com/blob/master/spec">tests</a> online.</p>
+
+<h3>Support or Contact</h3>
+
+<p><a href="https://github.com/oscin-es/oscin-es.github.com">oscin.es</a> was written by Reg Braithwaite (<a href="https://github.com/raganwald" class="user-mention">@raganwald</a>). It is published under the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+      </section>
+    </div>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38371925-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </body>
+</html>

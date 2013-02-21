@@ -1,0 +1,25 @@
+{
+  "author": "Reg Braithwaite <raganwald@gmail.com> (http://braythwayt.com)",
+  "name": "oscin.es",
+  "description": "Standard Combinator Birds",
+  "version": "2.3.4",
+  "homepage": "http://oscin.es",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oscin-es/oscin-es.github.com.git"
+  },
+  "main": "lib/oscin.es.js",
+  "scripts": {
+    "test": "jasmine-node --coffee --verbose spec"
+  },
+  "engines": {
+    "node": ""
+  },
+  "dependencies": {
+    "allong.es": "~0.2.0"
+  },
+  "devDependencies": {
+    "jasmine-node": "",
+    "coffee-script": ""
+  }
+}

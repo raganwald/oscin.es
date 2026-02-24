@@ -1,10 +1,10 @@
 # `oscin.es`
 
-The [oscin.es] library contains nearly all of the standard combinators from combinatorial logic implemented in JavaScript.
+The `oscin.es` library contains nearly all of the standard combinators from combinatorial logic implemented in JavaScript.
 
 ### installing oscin.es
 
-Installing [oscin.es] is a breeze with [npm]:
+Installing `oscin.es` is a breeze with [npm]:
 
     npm install oscin.es
     
@@ -14,7 +14,7 @@ You can run the tests if you like:
     npm install oscin.es
     npm test
 
-One day there may be a nice interactive REPL, or better still a browser playground, but for now let's use node:
+We can play with it in node:
 
     node
     
@@ -46,7 +46,7 @@ describe "The Standard Combinators", ->
 
 This portion says that the B Combinator (or "Bluebird") performs composition. CL is left-associative, so `xyz` is equivalent to `x(y)(z)` in JavaScript. But `Bxyz` is equivalent to `x(y(z))`, analogous to `compose` in the [allong.es] library and most other FP libraries for JavaScript.
 
-[oscin.es]: http://oscin.es
+`oscin.es`: http://oscin.es
 [allong.es]: http://allong.es
 [npm]: hpmjs.org
 [bird.by.bird.spec.coffee]: https://github.com/oscin-es/oscin-es.github.com/blob/master/spec/bird.by.bird.spec.coffee
@@ -70,7 +70,7 @@ This segment describes how to make a Dove out of two Bluebirds, an Eagle out of 
 
 ### using oscin.es
 
-So we have [oscin.es] loaded into [node]. Let's solve a problem from [To Mock a Mockingbird][mock]. Smullyan puts it much more eloquently, but we start with the following basic rules:
+So we have `oscin.es` loaded into [node]. Let's solve a problem from [To Mock a Mockingbird][mock]. Smullyan puts it much more eloquently, but we start with the following basic rules:
 
 1. We are given a forest of birds.
 2. When you call out the name of some bird to a bird, the bird responds with the name of a bird. We write this as `Ax = y`, where `A` is the name of some bird we know (perhaps "Arthur"), and `x` and `y` could be any birds in the forest, possibly including Arthur.
@@ -124,7 +124,7 @@ $('LIx')
 
 So, the Mockingbird is the bird named by the Lark when you call out "Identity Bird!" to it. Or in simple terms, `M = LI`. Since we actually found the bird, we have definitively proved that a forest containing a Lark and an Identity Bird also contains a Mockingbird!
 
-The reduce function from [oscin.es] provides a simple tool for playing with problems like this. You can play with simple combinations of proper and true combinators (A proper combinator has a fixed order. i.e. It shuffles, duplicates, or erases its arguments but doesn't introduce anything. A true combinator can be constructed from proper combinators).
+The reduce function from `oscin.es` provides a simple tool for playing with problems like this. You can play with simple combinations of proper and true combinators (A proper combinator has a fixed order. i.e. It shuffles, duplicates, or erases its arguments but doesn't introduce anything. A true combinator can be constructed from proper combinators).
 
 Reduce also works for fixed points ("Sage Birds"). For example:
 
@@ -154,13 +154,7 @@ In general, the standard combinators have two versions. One, with the full name,
 
 (The lower-case letters from `a` to `z` have a special role as placeholders within the `reduce` function. They are not defined.)
 
-### what else can I read?
-
-There's more on the [ocin.es home page][oscin.es]
-
 ---
-
-![](http://i.minus.com/iL337yTdgFj7.png)[![JavaScript Allongé](http://i.minus.com/iW2E1A8M5UWe6.jpeg)][ja]![](http://i.minus.com/iL337yTdgFj7.png)[![CoffeeScript Ristretto](http://i.minus.com/iMmGxzIZkHSLD.jpeg)](http://leanpub.com/coffeescript-ristretto "CoffeeScript Ristretto")![](http://i.minus.com/iL337yTdgFj7.png)[![Kestrels, Quirky Birds, and Hopeless Egocentricity](http://i.minus.com/ibw1f1ARQ4bhi1.jpeg)](http://leanpub.com/combinators "Kestrels, Quirky Birds, and Hopeless Egocentricity")
 
 * [JavaScript Allongé](http://leanpub.com/javascript-allonge), [CoffeeScript Ristretto](http://leanpub.com/coffeescript-ristretto), [Kestrels, Quirky Birds, and Hopeless Egocentricity](http://leanpub.com/combinators), and [other books](http://leanpub.com/u/raganwald).
 * [allong.es](http://allong.es), practical function combinators and decorators for JavaScript.
